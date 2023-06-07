@@ -3,6 +3,14 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'static.tvmaze.com'
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig
